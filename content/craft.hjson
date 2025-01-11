@@ -4,8 +4,8 @@ content: [
     name: "mechanical-drill",
     override: true,
     requirements: [
-      {item: "copper", amount: 80},
-      {item: "lead", amount: 40}
+      "copper/80",
+      "lead/40"
     ],
     drillTime: 320
   },
@@ -14,8 +14,8 @@ content: [
     name: "duo",
     override: true,
     requirements: [
-      {item: "copper", amount: 150},
-      {item: "lead", amount: 90}
+      "copper/150",
+      "lead/90"
     ]
   },
   {
@@ -23,15 +23,17 @@ content: [
     name: "graphite-press",
     override: true,
     requirements: [
-      {item: "copper", amount: 800},
-      {item: "lead", amount: 400}
+      "copper/800",
+      "lead/400"
     ],
     outputItems: [
-      {item: "graphite", amount: 1}
+      "graphite/1"
     ],
     craftTime: 200,
-    consumeItems: [
-      {item: "coal", amount: 20}
-    ]
+    consumes: {
+      items: [
+        "coal/20"
+      ]
+    }
   }
 ]
